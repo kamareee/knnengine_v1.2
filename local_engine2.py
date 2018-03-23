@@ -1,3 +1,9 @@
+
+# KNN Machine learning Engine for IDEAS
+# Author: Mohammad Kamar Uddin
+# Version            Comments
+# 1.2             Modified to predict with 13 attributes (mixed data)
+
 import requests
 from flask import Flask, jsonify, make_response, request
 from flask_restful import Api, Resource, reqparse
