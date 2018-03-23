@@ -161,6 +161,8 @@ class BarAPI(Resource):
             app.logger.debug("Database output: %s", advisory_result)
             app.logger.debug("Expert Matrix: %s", final_exp_matrix)
             app.logger.debug("Matched Matrix: %s", final_match_matrix)
+            app.logger.info("Process finished")
+            app.logger.info("------------------------")
 
             return {"PredictedClass": str(result),
                     "ExpertMatrix": str(final_exp_matrix),
