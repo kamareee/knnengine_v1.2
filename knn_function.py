@@ -117,6 +117,8 @@ def knn(testset, filename1, filename2):
 
     calculated_neighbors = get_neighbors(calculated_distance, k_value)
 
+    res_neighbours = calculated_neighbors[0][0:-1]
+
     result = get_response(calculated_neighbors)
 
-    return result
+    return {"result": result, "neighbours": res_neighbours}
